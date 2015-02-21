@@ -16,6 +16,7 @@
 		8893C5E71A9813A500601710 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8893C5E61A9813A500601710 /* GameViewController.swift */; };
 		8893C5E91A9813E900601710 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8893C5E81A9813E900601710 /* GameScene.swift */; };
 		8893C5EB1A98186A00601710 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8893C5EA1A98186A00601710 /* Cookie.swift */; };
+		8893C5ED1A982B5B00601710 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8893C5EC1A982B5B00601710 /* Matrix.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		8893C5E61A9813A500601710 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		8893C5E81A9813E900601710 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		8893C5EA1A98186A00601710 /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
+		8893C5EC1A982B5B00601710 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		8893C5EE1A982E4F00601710 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = CookieCrunch/MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 		8893C5B21A980F0700601710 = {
 			isa = PBXGroup;
 			children = (
+				8893C5EE1A982E4F00601710 /* MyPlayground.playground */,
 				8893C5BD1A980F0700601710 /* CookieCrunch */,
 				8893C5D71A980F0700601710 /* CookieCrunchTests */,
 				8893C5BC1A980F0700601710 /* Products */,
@@ -86,6 +90,7 @@
 				8893C5CD1A980F0700601710 /* LaunchScreen.xib */,
 				8893C5C81A980F0700601710 /* Main.storyboard */,
 				8893C5EA1A98186A00601710 /* Cookie.swift */,
+				8893C5EC1A982B5B00601710 /* Matrix.swift */,
 				8893C5E61A9813A500601710 /* GameViewController.swift */,
 				8893C5E81A9813E900601710 /* GameScene.swift */,
 				8893C5CB1A980F0700601710 /* Images.xcassets */,
@@ -223,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8893C5E91A9813E900601710 /* GameScene.swift in Sources */,
+				8893C5ED1A982B5B00601710 /* Matrix.swift in Sources */,
 				8893C5EB1A98186A00601710 /* Cookie.swift in Sources */,
 				8893C5E71A9813A500601710 /* GameViewController.swift in Sources */,
 				8893C5C11A980F0700601710 /* AppDelegate.swift in Sources */,
