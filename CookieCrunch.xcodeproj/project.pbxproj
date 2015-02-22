@@ -17,6 +17,8 @@
 		8893C5E91A9813E900601710 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8893C5E81A9813E900601710 /* GameScene.swift */; };
 		8893C5EB1A98186A00601710 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8893C5EA1A98186A00601710 /* Cookie.swift */; };
 		8893C5ED1A982B5B00601710 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8893C5EC1A982B5B00601710 /* Matrix.swift */; };
+		88F836331A987F9100D6B053 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F836321A987F9100D6B053 /* Set.swift */; };
+		88F836391A98843800D6B053 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F836381A98843800D6B053 /* Level.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		8893C5EA1A98186A00601710 /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
 		8893C5EC1A982B5B00601710 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		8893C5EE1A982E4F00601710 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = CookieCrunch/MyPlayground.playground; sourceTree = "<group>"; };
+		88F836321A987F9100D6B053 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		88F836381A98843800D6B053 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				8893C5EE1A982E4F00601710 /* MyPlayground.playground */,
+				88F836341A98833C00D6B053 /* Types */,
 				8893C5BD1A980F0700601710 /* CookieCrunch */,
 				8893C5D71A980F0700601710 /* CookieCrunchTests */,
 				8893C5BC1A980F0700601710 /* Products */,
@@ -89,10 +94,9 @@
 			children = (
 				8893C5CD1A980F0700601710 /* LaunchScreen.xib */,
 				8893C5C81A980F0700601710 /* Main.storyboard */,
-				8893C5EA1A98186A00601710 /* Cookie.swift */,
-				8893C5EC1A982B5B00601710 /* Matrix.swift */,
-				8893C5E61A9813A500601710 /* GameViewController.swift */,
-				8893C5E81A9813E900601710 /* GameScene.swift */,
+				88F836351A98840400D6B053 /* Model */,
+				88F836361A98840E00D6B053 /* Controller */,
+				88F836371A98841D00D6B053 /* View */,
 				8893C5CB1A980F0700601710 /* Images.xcassets */,
 				8893C5E41A9812F800601710 /* Sprites.atlas */,
 				8893C5BE1A980F0700601710 /* Supporting Files */,
@@ -124,6 +128,41 @@
 				8893C5D91A980F0700601710 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88F836341A98833C00D6B053 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				8893C5EC1A982B5B00601710 /* Matrix.swift */,
+				88F836321A987F9100D6B053 /* Set.swift */,
+			);
+			name = Types;
+			path = CookieCrunch;
+			sourceTree = "<group>";
+		};
+		88F836351A98840400D6B053 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8893C5EA1A98186A00601710 /* Cookie.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		88F836361A98840E00D6B053 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8893C5E61A9813A500601710 /* GameViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		88F836371A98841D00D6B053 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8893C5E81A9813E900601710 /* GameScene.swift */,
+				88F836381A98843800D6B053 /* Level.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8893C5E91A9813E900601710 /* GameScene.swift in Sources */,
+				88F836391A98843800D6B053 /* Level.swift in Sources */,
 				8893C5ED1A982B5B00601710 /* Matrix.swift in Sources */,
+				88F836331A987F9100D6B053 /* Set.swift in Sources */,
 				8893C5EB1A98186A00601710 /* Cookie.swift in Sources */,
 				8893C5E71A9813A500601710 /* GameViewController.swift in Sources */,
 				8893C5C11A980F0700601710 /* AppDelegate.swift in Sources */,
@@ -423,6 +464,7 @@
 				8893C5E01A980F0700601710 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8893C5E11A980F0700601710 /* Build configuration list for PBXNativeTarget "CookieCrunchTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +473,7 @@
 				8893C5E31A980F0700601710 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
