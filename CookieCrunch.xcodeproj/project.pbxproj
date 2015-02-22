@@ -19,6 +19,13 @@
 		8893C5ED1A982B5B00601710 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8893C5EC1A982B5B00601710 /* Matrix.swift */; };
 		88F836331A987F9100D6B053 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F836321A987F9100D6B053 /* Set.swift */; };
 		88F836391A98843800D6B053 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F836381A98843800D6B053 /* Level.swift */; };
+		88F836401A99D20400D6B053 /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 88F8363B1A99D20400D6B053 /* Level_0.json */; };
+		88F836411A99D20400D6B053 /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 88F8363C1A99D20400D6B053 /* Level_1.json */; };
+		88F836421A99D20400D6B053 /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 88F8363D1A99D20400D6B053 /* Level_2.json */; };
+		88F836431A99D20400D6B053 /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 88F8363E1A99D20400D6B053 /* Level_3.json */; };
+		88F836441A99D20400D6B053 /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 88F8363F1A99D20400D6B053 /* Level_4.json */; };
+		88F836461A99D26000D6B053 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F836451A99D26000D6B053 /* Tile.swift */; };
+		88F836481A99D3F700D6B053 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F836471A99D3F700D6B053 /* Dictionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		8893C5EE1A982E4F00601710 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = CookieCrunch/MyPlayground.playground; sourceTree = "<group>"; };
 		88F836321A987F9100D6B053 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		88F836381A98843800D6B053 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		88F8363B1A99D20400D6B053 /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
+		88F8363C1A99D20400D6B053 /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		88F8363D1A99D20400D6B053 /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		88F8363E1A99D20400D6B053 /* Level_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
+		88F8363F1A99D20400D6B053 /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
+		88F836451A99D26000D6B053 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tile.swift; path = Levels/Tile.swift; sourceTree = "<group>"; };
+		88F836471A99D3F700D6B053 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = CookieCrunch/Dictionary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				8893C5EE1A982E4F00601710 /* MyPlayground.playground */,
+				88F836491A99D42300D6B053 /* Extensions */,
 				88F836341A98833C00D6B053 /* Types */,
 				8893C5BD1A980F0700601710 /* CookieCrunch */,
 				8893C5D71A980F0700601710 /* CookieCrunchTests */,
@@ -99,6 +114,7 @@
 				88F836371A98841D00D6B053 /* View */,
 				8893C5CB1A980F0700601710 /* Images.xcassets */,
 				8893C5E41A9812F800601710 /* Sprites.atlas */,
+				88F8363A1A99D20400D6B053 /* Levels */,
 				8893C5BE1A980F0700601710 /* Supporting Files */,
 			);
 			path = CookieCrunch;
@@ -144,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				8893C5EA1A98186A00601710 /* Cookie.swift */,
+				88F836451A99D26000D6B053 /* Tile.swift */,
+				88F836381A98843800D6B053 /* Level.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -160,9 +178,28 @@
 			isa = PBXGroup;
 			children = (
 				8893C5E81A9813E900601710 /* GameScene.swift */,
-				88F836381A98843800D6B053 /* Level.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		88F8363A1A99D20400D6B053 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				88F8363B1A99D20400D6B053 /* Level_0.json */,
+				88F8363C1A99D20400D6B053 /* Level_1.json */,
+				88F8363D1A99D20400D6B053 /* Level_2.json */,
+				88F8363E1A99D20400D6B053 /* Level_3.json */,
+				88F8363F1A99D20400D6B053 /* Level_4.json */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		88F836491A99D42300D6B053 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				88F836471A99D3F700D6B053 /* Dictionary.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,8 +283,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8893C5CF1A980F0700601710 /* LaunchScreen.xib in Resources */,
+				88F836441A99D20400D6B053 /* Level_4.json in Resources */,
+				88F836421A99D20400D6B053 /* Level_2.json in Resources */,
+				88F836401A99D20400D6B053 /* Level_0.json in Resources */,
 				8893C5CC1A980F0700601710 /* Images.xcassets in Resources */,
 				8893C5CA1A980F0700601710 /* Main.storyboard in Resources */,
+				88F836411A99D20400D6B053 /* Level_1.json in Resources */,
+				88F836431A99D20400D6B053 /* Level_3.json in Resources */,
 				8893C5E51A9812F800601710 /* Sprites.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +311,9 @@
 				8893C5E91A9813E900601710 /* GameScene.swift in Sources */,
 				88F836391A98843800D6B053 /* Level.swift in Sources */,
 				8893C5ED1A982B5B00601710 /* Matrix.swift in Sources */,
+				88F836461A99D26000D6B053 /* Tile.swift in Sources */,
 				88F836331A987F9100D6B053 /* Set.swift in Sources */,
+				88F836481A99D3F700D6B053 /* Dictionary.swift in Sources */,
 				8893C5EB1A98186A00601710 /* Cookie.swift in Sources */,
 				8893C5E71A9813A500601710 /* GameViewController.swift in Sources */,
 				8893C5C11A980F0700601710 /* AppDelegate.swift in Sources */,
