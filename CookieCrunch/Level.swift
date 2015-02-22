@@ -6,16 +6,22 @@
 //  Copyright (c) 2015 Renato Camilio. All rights reserved.
 //
 
+let NumColumns = 9
+let NumRows = 9
 
 class Level {
     
-    private var cookies = Matrix<Cookie>(columns: 9, rows: 9)
+    private var cookies = Matrix<Cookie>(columns: NumColumns, rows: NumRows)
     
     func cookieAtColumn(column: Int, row: Int) -> Cookie? {
         assert(column >= 0 && column < cookies.columns, "`column` is out of range in `cookies.columns`")
         assert(row >= 0 && row < cookies.rows, "`row` is out of range in `cookies.rows`")
         
         return cookies[column, row]
+    }
+    
+    func shuffle() -> Set<Cookie> {
+        return createInitialCookies()
     }
     
     private func createInitialCookies() -> Set<Cookie> {
@@ -33,10 +39,6 @@ class Level {
         }
         
         return set
-    }
-
-    func shuffle() -> Set<Cookie> {
-        return createInitialCookies()
     }
     
 }

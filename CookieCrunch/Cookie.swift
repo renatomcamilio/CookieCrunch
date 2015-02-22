@@ -9,6 +9,7 @@
 import SpriteKit
 
 enum CookieType: Int, Printable {
+    
     case Unknown = 0, Croissant, Cupcake, Danish, Donut, Macaroon, SugarCookie
     
     var spriteName: String {
@@ -20,7 +21,7 @@ enum CookieType: Int, Printable {
             "Macaroon",
             "SugarCookie"]
         
-        return spriteNames[rawValue - 1]
+        return spriteNames[rawValue]
     }
     
     var highlightedSpriteName: String {
@@ -34,17 +35,22 @@ enum CookieType: Int, Printable {
     var description: String {
         return spriteName
     }
+    
 }
 
 // Equatable protocol (implied by Hashable protocol)
 // Make sure to put it in the global scope
+
 func ==(lhs: Cookie, rhs: Cookie) -> Bool {
+    
     // We're ignoring Cookie's Type here because it's not relevant
     // to detect when they are in the same tile
+    
     return lhs.column == rhs.column && lhs.row == rhs.row;
 }
 
 class Cookie: Printable, Hashable {
+    
     var column: Int
     var row: Int
     let cookieType: CookieType

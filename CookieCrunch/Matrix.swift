@@ -7,6 +7,7 @@
 //
 
 struct Matrix<T> {
+    
     let columns: Int
     let rows: Int
     private var array: [T?]
