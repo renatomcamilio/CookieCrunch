@@ -69,7 +69,7 @@ class Cookie: Printable, Hashable {
     
     // Hashable protocol
     var hashValue: Int {
-        return (row + column) * 10 // It needs to be unique
+        return row*10 + column // It needs to be unique
     }
     
 }

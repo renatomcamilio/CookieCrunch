@@ -23,6 +23,9 @@ class GameScene: SKScene {
     private var swipeFromRow: Int?
     
     var swipeHandler: ((Swap) -> ())?
+    var selectionSprite = SKSpriteNode()
+    
+
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder) is not used in this app")
@@ -88,6 +91,7 @@ class GameScene: SKScene {
         let (success, column, row) = convertPoint(location)
         if success {
             if let cookie = level.cookieAtColumn(column, row: row) {
+                showSelectionIndicatorForCookie(cookie)
                 swipeFromColumn = column
                 swipeFromRow = row
             }
@@ -125,6 +129,7 @@ class GameScene: SKScene {
             
             if horzDelta != 0 || vertDelta != 0 {
                 trySwapHorizontal(horzDelta, vertical: vertDelta)
+                hideSelectionIndicator()
                 
                 swipeFromColumn = nil
             }
@@ -166,13 +171,57 @@ class GameScene: SKScene {
         spriteB.runAction(moveB)
     }
     
+    func animateInvalidSwap(swap: Swap, completion: () -> ()) {
+        let spriteA = swap.cookieA.spriteNode!
+        let spriteB = swap.cookieB.spriteNode!
+        
+        spriteA.zPosition = 100
+        spriteB.zPosition = 90
+        
+        let Duration: NSTimeInterval = 0.2
+        
+        let moveA = SKAction.moveTo(spriteB.position, duration: Duration)
+        moveA.timingMode = .EaseOut
+        
+        let moveB = SKAction.moveTo(spriteA.position, duration: Duration)
+        moveB.timingMode = .EaseOut
+        
+        spriteA.runAction(SKAction.sequence([moveA, moveB]), completion: completion)
+        spriteB.runAction(SKAction.sequence([moveB, moveA]))
+    }
+    
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+        if selectionSprite.parent != nil && swipeFromColumn != nil {
+            hideSelectionIndicator()
+        }
+        
         swipeFromColumn = nil
         swipeFromRow = nil
     }
     
     override func touchesCancelled(touches: NSSet, withEvent event: UIEvent) {
         touchesEnded(touches, withEvent: event)
+    }
+    
+    func showSelectionIndicatorForCookie(cookie: Cookie) {
+        if selectionSprite.parent != nil {
+            selectionSprite.removeFromParent()
+        }
+        
+        if let spriteNode = cookie.spriteNode {
+            let texture = SKTexture(imageNamed: cookie.cookieType.highlightedSpriteName)
+            selectionSprite.size = texture.size()
+            selectionSprite.runAction(SKAction.setTexture(texture))
+            
+            spriteNode.addChild(selectionSprite)
+            selectionSprite.alpha = 1.0
+        }
+    }
+    
+    func hideSelectionIndicator() {
+        selectionSprite.runAction(SKAction.sequence([
+            SKAction.fadeOutWithDuration(0.3),
+            SKAction.removeFromParent()]))
     }
     
 }
