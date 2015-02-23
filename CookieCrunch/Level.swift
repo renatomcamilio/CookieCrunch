@@ -16,13 +16,11 @@ class Level {
     
     init(fileName: String) {
         if let dictionary = Dictionary<String, AnyObject>.loadJSONFromBundle(fileName) {
-            if let tilesArray: AnyObject = dictionary["tiles"] {
-                for (row, rowArray) in enumerate(tilesArray as [[Int]]) {
-                    let tileRow = NumRows - row - 1
-                    
+            if let tilesArray = dictionary["tiles"] as? [[Int]] {
+                for (row, rowArray) in enumerate(tilesArray.reverse()) {
                     for (column, value) in enumerate(rowArray) {
-                        if value == 1 {
-                            tiles[column, tileRow] = Tile()
+                        if value == TileContent.Cookie.rawValue {
+                            tiles[column, row] = Tile()
                         }
                     }
                 }
