@@ -18,6 +18,7 @@
 		8893C5EB1A98186A00601710 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8893C5EA1A98186A00601710 /* Cookie.swift */; };
 		8893C5ED1A982B5B00601710 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8893C5EC1A982B5B00601710 /* Matrix.swift */; };
 		88AFECB11A9AE6F500883DAE /* Level_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 88AFECB01A9AE6F500883DAE /* Level_5.json */; };
+		88AFECB31A9B057300883DAE /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AFECB21A9B057300883DAE /* Swap.swift */; };
 		88F836331A987F9100D6B053 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F836321A987F9100D6B053 /* Set.swift */; };
 		88F836391A98843800D6B053 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F836381A98843800D6B053 /* Level.swift */; };
 		88F836401A99D20400D6B053 /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 88F8363B1A99D20400D6B053 /* Level_0.json */; };
@@ -56,6 +57,7 @@
 		8893C5EC1A982B5B00601710 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		8893C5EE1A982E4F00601710 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = CookieCrunch/MyPlayground.playground; sourceTree = "<group>"; };
 		88AFECB01A9AE6F500883DAE /* Level_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_5.json; sourceTree = "<group>"; };
+		88AFECB21A9B057300883DAE /* Swap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
 		88F836321A987F9100D6B053 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		88F836381A98843800D6B053 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		88F8363B1A99D20400D6B053 /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				8893C5EA1A98186A00601710 /* Cookie.swift */,
 				88F836451A99D26000D6B053 /* Tile.swift */,
 				88F836381A98843800D6B053 /* Level.swift */,
+				88AFECB21A9B057300883DAE /* Swap.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				88F836391A98843800D6B053 /* Level.swift in Sources */,
 				8893C5ED1A982B5B00601710 /* Matrix.swift in Sources */,
 				88F836461A99D26000D6B053 /* Tile.swift in Sources */,
+				88AFECB31A9B057300883DAE /* Swap.swift in Sources */,
 				88F836331A987F9100D6B053 /* Set.swift in Sources */,
 				88F836481A99D3F700D6B053 /* Dictionary.swift in Sources */,
 				8893C5EB1A98186A00601710 /* Cookie.swift in Sources */,

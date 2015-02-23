@@ -54,7 +54,7 @@ class Cookie: Printable, Hashable {
     var column: Int
     var row: Int
     let cookieType: CookieType
-    var sprite: SKSpriteNode?
+    var spriteNode: SKSpriteNode?
     
     init(column: Int, row: Int, cookieType: CookieType) {
         self.column = column
